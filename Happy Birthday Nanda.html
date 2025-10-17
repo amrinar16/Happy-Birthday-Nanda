@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Flowrynsaa! 💖</title>
+    <style>
+        /* Styling body untuk background motif lucu bernuansa pink */
+        body {
+            background-color: #FF69B4; /* Pink lebih tua untuk kontras */
+            background-image: 
+                radial-gradient(circle, rgba(255, 182, 193, 0.2) 10%, transparent 10%),
+                radial-gradient(circle, rgba(255, 105, 180, 0.3) 20%, transparent 20%);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
+            font-family: 'Arial, sans-serif'; /* Font baru: Arial, yang mudah dibaca */
+            color: #FFFFFF; /* Warna tulisan putih */
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animasi fade-in untuk body */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .typing-container {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+            white-space: pre-wrap; /* Menjaga baris baru dan spasi */
+            border-right: 0.15em solid #FFFFFF; /* Cursor putih */
+            overflow: hidden; /* Untuk efek animasi */
+        }
+
+        /* Animasi blink untuk cursor */
+        @keyframes blink {
+            0% { border-right-color: #FFFFFF; }
+            50% { border-right-color: transparent; }
+            100% { border-right-color: #FFFFFF; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🌷 Happy Birthday, Flowrynsaa! 💖🎉</h1>
+    <div id="typing-effect" class="typing-container">
+        Hellooww Flowrynsaa!! 💖🎉 <br>
+        HBD my partner in crimee 😚🎂 
+        Seventeen looks sooo good on you 😍✨ Akhirnyaa masuk juga ke umur sweet seventeen yang katanya paling berkesan dan penuh kenangan indah! 🌸
+        Semoga di usia baru ini kamu makin dewasa, makin cantik luar dalam, dan semua impianmu satu per satu bisa kamu raih. 🦋 
+        Tetap jadi pribadi yang ceria, baik hati, dan selalu nyebarin energi positif kayak biasanya yaa — karena dunia butuh orang sebercahaya kamu 🌞 <br>
+        Makasih udah jadi sahabat terbaik yang selalu ada, dari tawa paling konyol sampai curhat tengah malam 😭💞
+        Semoga hari-harimu selalu penuh tawa, cinta, dan hal-hal indah yang kamu pantas banget dapetin 💫
+        Kalau ada rintangan, jangan lupa kalau kamu nggak sendiri — aku selalu di sini, siap jadi tempat curhat, ketawa, bahkan nangis bareng 😭🤍 <br>
+        Let’s make more crazy memories together yaa!! 😝✨
+        Pokoknya harus terus bareng, jangan sampe asing looo 😧 
+        Karena sahabat sejati itu bukan cuma tentang seberapa sering ketemu, tapi seberapa kuat kita tetep nyambung walau waktu terus jalan 🫶🏻 <br>
+        
+        maaf alay hehehe, ini biar long text aja si <br>
+        
+        Love u so much bestiee 💕 
+        Happy Sweet Seventeennn, enjoy your special day to the fullest!! 🎉🎂🌷🦋
+    </div>
+
+    <script>
+        // JavaScript untuk animasi mengetik per kata
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingElement = document.getElementById('typing-effect');
+            const originalText = typingElement.innerHTML;  // Ambil teks asli
+            typingElement.innerHTML = '';  // Kosongkan dulu untuk animasi
+            
+            const words = originalText.split(' ');  // Pecah teks menjadi array kata
+            let i = 0;
+            const speed = 200;  // Delay per kata dalam milidetik
+            
+            function typeWriter() {
+                if (i < words.length) {
+                    typingElement.innerHTML += words[i] + (i < words.length - 1 ? ' ' : '');
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    typingElement.style.animation = 'blink 0.75s step-end infinite';
+                }
+            }
+            
+            typeWriter();  // Mulai animasi
+        });
+    </script>
+</body>
+</html>
